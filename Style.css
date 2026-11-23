@@ -1,0 +1,230 @@
+:root {
+  --font-futura: "Futura", "Century Gothic", "Tw Cen MT", sans-serif;
+  --bg-page: #f2f8fc;          /* Blanc bleuté très doux */
+  --surface-white: #ffffff;    /* Blanc pur pour les cartes */
+  --surface-tint: #e4f1f9;     /* Bleu pâle apaisant */
+  --ocean-deep: #154360;       /* Bleu profond lisible pour les titres */
+  --ocean-mid: #24648c;        /* Bleu océan doux pour accents */
+  --text-body: #233947;        /* Bleu-gris foncé, moins agressif que le noir pur */
+  --text-muted: #4d6b7d;       /* Bleu-gris secondaire */
+  --border-soft: #cfe3f0;      /* Bordure fine bleu clair */
+  --correct-bg: #dff2ec;       /* Vert d'eau doux pour bonne réponse */
+  --correct-border: #2e7d67;
+  --wrong-bg: #fbe9e7;         /* Rose-corail doux pour autre choix */
+  --wrong-border: #b85448;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-futura);
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text-body);
+  background: linear-gradient(180deg, #e7f3fa 0%, var(--bg-page) 280px, var(--bg-page) 100%);
+}
+
+/* Titres en Futura gras */
+h1,
+h2,
+h3 {
+  font-family: var(--font-futura);
+  font-weight: 700;
+  color: var(--ocean-deep);
+  margin-top: 0;
+}
+
+.site-header {
+  text-align: center;
+  padding: 3rem 1.25rem 2.25rem;
+  background-color: var(--surface-white);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.site-title {
+  margin: 0 auto;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  letter-spacing: 0.04em;
+  color: var(--ocean-deep);
+}
+
+.site-subtitle {
+  margin: 0.6rem auto 0;
+  max-width: 36rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+/* Fiches requin : texte et photo côte à côte */
+.sharks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.shark-card {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 1.75rem;
+  background-color: var(--surface-white);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.shark-card--reverse .shark-text {
+  order: 2;
+}
+
+.shark-card--reverse .shark-media {
+  order: 1;
+}
+
+.shark-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.shark-text p {
+  margin: 0;
+}
+
+.shark-media {
+  margin: 0;
+}
+
+.shark-media img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: var(--surface-tint);
+}
+
+/* Section QCM et Fun Facts */
+.quiz-section {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border-soft);
+}
+
+.quiz-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.quiz-header h2 {
+  font-size: 1.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.quiz-header p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.25rem;
+}
+
+.qcm-card {
+  background-color: var(--surface-white);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.qcm-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.qcm-question {
+  margin: 0 0 0.9rem;
+  font-weight: 500;
+}
+
+.qcm-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.qcm-btn {
+  text-align: left;
+  font-family: var(--font-futura);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  cursor: pointer;
+}
+
+.qcm-btn:hover {
+  background-color: var(--surface-tint);
+  border-color: var(--ocean-mid);
+}
+
+.qcm-btn:focus-visible {
+  outline: 2px solid var(--ocean-mid);
+  outline-offset: 2px;
+}
+
+.qcm-btn.is-correct {
+  background-color: var(--correct-bg);
+  border-color: var(--correct-border);
+  color: var(--ocean-deep);
+}
+
+.qcm-btn.is-wrong {
+  background-color: var(--wrong-bg);
+  border-color: var(--wrong-border);
+}
+
+.qcm-feedback {
+  margin: 0.9rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  background-color: var(--surface-tint);
+  border-left: 3px solid var(--ocean-mid);
+  font-size: 0.95rem;
+}
+
+/* Adaptation mobile : texte au-dessus de la photo */
+@media (max-width: 760px) {
+  .shark-card {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    padding: 1.15rem;
+  }
+
+  .shark-card--reverse .shark-text,
+  .shark-card--reverse .shark-media {
+    order: initial;
+  }
+
+  .shark-media img {
+    height: 210px;
+  }
+}

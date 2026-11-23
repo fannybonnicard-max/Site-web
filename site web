@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blahaj — Univers des Requins</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Blahaj</h1>
+    <p class="site-subtitle">Exploration calme des requins et petits QCM découverte</p>
+  </header>
+
+  <main class="container">
+    <section aria-label="Présentation des requins" class="sharks-list">
+      <!-- 1. Requin baleine -->
+      <article class="shark-card">
+        <div class="shark-text">
+          <h2>Requin baleine</h2>
+          <p>
+            Le requin baleine (<em>Rhincodon typus</em>) est le plus grand poisson vivant connu.
+            Malgré sa taille impressionnante, il est paisible et se nourrit principalement de
+            plancton, de krill et de petits poissons en filtrant l'eau.
+          </p>
+        </div>
+        <div class="shark-media">
+          <img src="Photo/istockphoto-179066402-612x612.jpg"
+            alt="Requin baleine tacheté nageant dans une eau bleue"
+          />
+        </div>
+      </article>
+
+      <!-- 2. Requin marteau -->
+      <article class="shark-card shark-card--reverse">
+        <div class="shark-text">
+          <h2>Requin marteau</h2>
+          <p>
+            Reconnaissable à sa tête aplatie et élargie en forme de marteau (le céphalofoil),
+            le requin marteau bénéficie d'une vision panoramique élargie et d'une excellente
+            détection des champs électriques de ses proies sur le fond marin.
+          </p>
+        </div>
+        <div class="shark-media">
+          <img src="Photo/grand-requin-marteau-24-768x513.jpg"
+            alt="Requin marteau halicorne vu de profil dans l'eau bleue"
+          />
+        </div>
+      </article>
+
+      <!-- 3. Requin tigre -->
+      <article class="shark-card">
+        <div class="shark-text">
+          <h2>Requin tigre</h2>
+          <p>
+            Le requin tigre (<em>Galeocerdo cuvier</em>) doit son nom aux rayures verticales
+            discrètes qui marquent le corps des jeunes individus. Opportuniste et curieux, il
+            fréquente les eaux tropicales et tempérées près des côtes et des récifs.
+          </p>
+        </div>
+        <div class="shark-media">
+          <img src="Photo/galeocerdo_cuvier-slb121_image600.jpg"
+            alt="Requin tigre nageant dans un océan bleu profond"
+          />
+        </div>
+      </article>
+
+      <!-- 4. Requin blanc -->
+      <article class="shark-card shark-card--reverse">
+        <div class="shark-text">
+          <h2>Requin blanc</h2>
+          <p>
+            Le grand requin blanc (<em>Carcharodon carcharias</em>) est un nageur endurant capable
+            de parcourir de longues distances dans les océans tempérés. Son dos gris-bleu et son
+            ventre blanc lui offrent un camouflage discret face à la lumière et aux profondeurs.
+          </p>
+        </div>
+        <div class="shark-media">
+          <img src="Photo/OIP.webp"
+            alt="Grand requin blanc glissant dans une eau bleue"
+          />
+        </div>
+      </article>
+
+      <!-- 5. Requin citron -->
+      <article class="shark-card">
+        <div class="shark-text">
+          <h2>Requin citron</h2>
+          <p>
+            Le requin citron (<em>Negaprion brevirostris</em>) présente une teinte jaunâtre à
+            brun-olive douce qui s'harmonise avec les fonds sableux et les mangroves. Il est
+            souvent observé dans les eaux côtières peu profondes et revient volontiers dans les
+            mêmes zones de nourricerie.
+          </p>
+        </div>
+        <div class="shark-media">
+          <img src="Photo/requin-citron-12-768x512.jpg"
+            alt="Requin citron nageant dans une eau bleue claire"
+          />
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="quiz-heading" class="quiz-section">
+      <div class="quiz-header">
+        <h2 id="quiz-heading">Petits QCM &amp; Fun Facts</h2>
+        <p>Clique sur une réponse pour découvrir un fait surprenant sur chaque requin.</p>
+      </div>
+
+      <div class="quiz-grid">
+        <!-- QCM Requin baleine -->
+        <div class="qcm-card" data-answer="a">
+          <h3>QCM 1 — Requin baleine</h3>
+          <p class="qcm-question">Quelle particularité distingue les taches du requin baleine ?</p>
+          <div class="qcm-options">
+            <button type="button" class="qcm-btn" data-choice="a">Elles forment un motif unique comme une empreinte digitale</button>
+            <button type="button" class="qcm-btn" data-choice="b">Elles brillent dans le noir comme une lampe</button>
+            <button type="button" class="qcm-btn" data-choice="c">Elles disparaissent chaque hiver</button>
+          </div>
+          <p class="qcm-feedback" hidden>
+            <strong>Fun fact :</strong> Chaque requin baleine possède une constellation de points et de
+            lignes unique, ce qui permet aux scientifiques d'identifier chaque individu par photo.
+          </p>
+        </div>
+
+        <!-- QCM Requin marteau -->
+        <div class="qcm-card" data-answer="b">
+          <h3>QCM 2 — Requin marteau</h3>
+          <p class="qcm-question">À quoi sert notamment la forme élargie de sa tête ?</p>
+          <div class="qcm-options">
+            <button type="button" class="qcm-btn" data-choice="a">À creuser des terriers dans la roche</button>
+            <button type="button" class="qcm-btn" data-choice="b">À espacer ses capteurs sensoriels pour mieux repérer ses proies</button>
+            <button type="button" class="qcm-btn" data-choice="c">À flotter immobile à la surface comme une bouée</button>
+          </div>
+          <p class="qcm-feedback" hidden>
+            <strong>Fun fact :</strong> L'écartement de ses yeux lui donne un champ visuel vertical
+            très large, et ses capteurs électriques couvrent une plus grande surface de balayage.
+          </p>
+        </div>
+
+        <!-- QCM Requin tigre -->
+        <div class="qcm-card" data-answer="c">
+          <h3>QCM 3 — Requin tigre</h3>
+          <p class="qcm-question">Quel détail est fréquent chez les jeunes requins tigres ?</p>
+          <div class="qcm-options">
+            <button type="button" class="qcm-btn" data-choice="a">Ils n'ont pas de nageoire dorsale</button>
+            <button type="button" class="qcm-btn" data-choice="b">Ils vivent uniquement en eau douce</button>
+            <button type="button" class="qcm-btn" data-choice="c">Leurs rayures sont plus nettes quand ils sont jeunes</button>
+          </div>
+          <p class="qcm-feedback" hidden>
+            <strong>Fun fact :</strong> Les zébrures verticales du requin tigre sont bien plus marquées
+            chez les jeunes et s'estompent progressivement en grandissant.
+          </p>
+        </div>
+
+        <!-- QCM Requin blanc -->
+        <div class="qcm-card" data-answer="a">
+          <h3>QCM 4 — Requin blanc</h3>
+          <p class="qcm-question">Comment le grand requin blanc garde-t-il ses muscles actifs en eau fraîche ?</p>
+          <div class="qcm-options">
+            <button type="button" class="qcm-btn" data-choice="a">Grâce à un système d'échange thermique qui conserve la chaleur</button>
+            <button type="button" class="qcm-btn" data-choice="b">En hibernant au fond de l'océan</button>
+            <button type="button" class="qcm-btn" data-choice="c">En ne nageant que près de l'équateur</button>
+          </div>
+          <p class="qcm-feedback" hidden>
+            <strong>Fun fact :</strong> Sa température corporelle peut être supérieure à celle de l'eau
+            ambiante, ce qui l'aide à nager efficacement dans des eaux tempérées.
+          </p>
+        </div>
+
+        <!-- QCM Requin citron -->
+        <div class="qcm-card" data-answer="b">
+          <h3>QCM 5 — Requin citron</h3>
+          <p class="qcm-question">Que montrent les études scientifiques sur le comportement du requin citron ?</p>
+          <div class="qcm-options">
+            <button type="button" class="qcm-btn" data-choice="a">Il ne nage jamais en groupe</button>
+            <button type="button" class="qcm-btn" data-choice="b">Il peut former des liens sociaux et apprendre par observation</button>
+            <button type="button" class="qcm-btn" data-choice="c">Il change de couleur toutes les minutes</button>
+          </div>
+          <p class="qcm-feedback" hidden>
+            <strong>Fun fact :</strong> Les requins citrons ont fait l'objet d'études montrant une
+            fidélité à certains sites côtiers et des préférences sociales durables entre individus.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll(".qcm-card").forEach((card) => {
+      const correctChoice = card.dataset.answer;
+      const feedback = card.querySelector(".qcm-feedback");
+      const buttons = card.querySelectorAll(".qcm-btn");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          buttons.forEach((b) => {
+            b.classList.remove("is-selected", "is-correct", "is-wrong");
+          });
+
+          const chosen = btn.dataset.choice;
+          btn.classList.add("is-selected");
+
+          if (chosen === correctChoice) {
+            btn.classList.add("is-correct");
+          } else {
+            btn.classList.add("is-wrong");
+            const rightBtn = card.querySelector(`.qcm-btn[data-choice="${correctChoice}"]`);
+            if (rightBtn) rightBtn.classList.add("is-correct");
+          }
+
+          feedback.hidden = false;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+<!-- MODULE 1 : COMPARATEUR DE TAILLE -->
+<div id="shark-comparator" class="shark-widget">
+  <h3>Comparateur de taille : Requin vs Humain</h3>
+  <p>Sélectionne une espèce pour comparer sa taille moyenne à celle d'un plongeur (1,80 m).</p>
+
+  <div class="controls">
+    <button class="shark-btn active" data-name="Requin-lanterne nain" data-size="0.2" data-info="Le plus petit requin connu (20 cm). Il tient dans la main !">Requin-lanterne nain</button>
+    <button class="shark-btn" data-name="Requin-marteau halicorne" data-size="3.7" data-info="Reconnaissable à sa tête en forme de marteau (3,70 m).">Requin-marteau</button>
+    <button class="shark-btn" data-name="Grand requin blanc" data-size="5.0" data-info="Le célèbre prédateur des mers tempérées (5,00 m en moyenne).">Grand requin blanc</button>
+    <button class="shark-btn" data-name="Requin-baleine" data-size="12.0" data-info="Le plus grand poisson vivant sur Terre, inoffensif (12,00 m).">Requin-baleine</button>
+    <button class="shark-btn" data-name="Mégalodon (Éteint)" data-size="16.0" data-info="Géant préhistorique disparu il y a 3,6 millions d'années (jusqu'à 16 m).">Mégalodon</button>
+  </div>
+
+  <div class="visual-stage">
+    <!-- Silhouette Humain (référence fixe : 1.8m) -->
+    <div class="entity human-box">
+      <div id="human-bar" class="bar human-bar"></div>
+      <span>Plongeur (1,80 m)</span>
+    </div>
+
+    <!-- Silhouette Requin (dynamique) -->
+    <div class="entity shark-box">
+      <div id="shark-bar" class="bar shark-bar"></div>
+      <span id="shark-label">Requin-lanterne nain (0,20 m)</span>
+    </div>
+  </div>
+
+  <p id="shark-fact" class="fact-box">Le plus petit requin connu (20 cm). Il tient dans la main !</p>
+</div>
+
+<style>
+  .shark-widget {
+    background: #ffffff;
+    color: #00224e;
+    padding: 24px;
+    border-radius: 12px;
+    font-family: system-ui, -apple-system, sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+  .shark-widget h3 { margin-top: 0; color: #9adaff; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .shark-btn {
+    background: #112240;
+    color: #d5def3;
+    border: 1px solid #ffffff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .shark-btn:hover, .shark-btn.active {
+    background: #aad0f0;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .visual-stage {
+    background: #06005c;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .entity { display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem; color: #ffffff;}
+  .bar { height: 22px; border-radius: 4px; transition: width 0.5s ease-out; }
+  .human-bar { background: #9adaff; }
+  .shark-bar { background: #d5b6ff; }
+  .fact-box {
+    margin-top: 16px;
+    padding: 12px;
+    background: rgba(185, 214, 247, 0.1);
+    border-left: 3px solid #000000;
+    font-size: 0.95rem;
+  }
+</style>
+
+<script>
+  (function() {
+    const maxMeters = 16.0; // Échelle basée sur le Mégalodon (100% de largeur)
+    const humanSize = 1.8;
+    const humanBar = document.getElementById('human-bar');
+    const sharkBar = document.getElementById('shark-bar');
+    const sharkLabel = document.getElementById('shark-label');
+    const sharkFact = document.getElementById('shark-fact');
+    const buttons = document.querySelectorAll('.shark-btn');
+
+    // Initialisation taille humaine
+    humanBar.style.width = ((humanSize / maxMeters) * 100) + '%';
+
+    function updateShark(btn) {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const name = btn.dataset.name;
+      const size = parseFloat(btn.dataset.size);
+      const info = btn.dataset.info;
+
+      const percentage = Math.max((size / maxMeters) * 100, 1.5); // min 1.5% pour rester visible
+      sharkBar.style.width = percentage + '%';
+      sharkLabel.textContent = `${name} (${size.toFixed(2).replace('.', ',')} m)`;
+      sharkFact.textContent = info;
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => updateShark(btn));
+    });
+
+    // Charger le premier par défaut
+    updateShark(buttons[0]);
+  })();
+</script>
